@@ -1,6 +1,6 @@
 <?php
 
-$variable = [];
+$variable = 3.14;
 
 if (is_bool($variable)) {
     $type = 'bool';
@@ -30,8 +30,8 @@ if (is_bool($variable)) {
     <title>bPHP - 1.1.1</title>
 </head>
 <body>
-    <p><?= "{$variable} is ${type}" ?></p>
+    <p><?php echo "{$variable} is {$type}" ?></p>
 	<hr>
-	<p><?= $description ?></p>
+	<p><?php echo $description ?></p>
 </body>
 </html>
