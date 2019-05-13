@@ -1,6 +1,6 @@
 <?php
 
-$login = $_POST['logim'];
+$login = $_POST['login'];
 $pass = $_POST['password'];
 $email = $_POST['email'];
 $firstName = $_POST['firstName'];
