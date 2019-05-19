@@ -1,11 +1,13 @@
 <?php
 
 $uploadDir = 'images/';
-$uploadFile = $uploadDir . basename($_FILES['image']['name']);
+if (isset($_POST['image'])) {
+    $uploadFile = $uploadDir . basename($_FILES['image']['name']);
 
 
-if (move_uploaded_file($_FILES['image']['tmp_name'], $uploadFile)) {
-    echo 'Картинка загружена';
+    if (move_uploaded_file($_FILES['image']['tmp_name'], $uploadFile)) {
+        echo 'Картинка загружена';
+    }
 }
 
 $files = scandir($uploadDir);
